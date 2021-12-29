@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio with the projects carried out so far as a student of Juan Jose Garcia Pinzon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Portfolio - Juan Jose</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="(min-width:900px)">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <p>Hi! My name is</p>
+            <h1>Juan José García</h1>
+            <p>and I'm a Web developer</p>
+            <div class="location">
+                <i class='bx bx-current-location'></i>
+                <p>Bogotá, Colombia</p>
+            </div>
+            <a href="#about" class="down-arrow"> <i class='bx bx-down-arrow-alt'></i> </a>
+            <div class="credits">
+                <i class='bx bxs-camera'></i>
+                <a href="https://www.instagram.com/santiagoboadaa/">Santiago Boada</a>
+            </div>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section id="about" class="about">
+            <div class="line blue"></div>
+            <h2>About me</h2>
+            <p>Hi my name is Juan José García, a young man passionate about science and technology. I am currently studying web development and artificial intelligence and here is some projects that I have been made. I hope you like them ;)</p>
+        </section>
+
+        <section class="proyects">
+            <div class="line suzy"></div>
+            <h2>Proyects</h2>
+            <div class="proyects__wrapper">
+                <div class="proyect">
+                    <h3>Batatabit</h3>
+                    <div class="img__container">
+                      <img class="proyect__image" width="100%" loading="lazy" src="./assets/images/batatabit-view.webp" alt="Preview of the view corresponding to the Batatabit project">
+                    </div>
+                    <p>Repository <a class="repo__link" href="https://github.com/Juan961/batatabit" target="_blank">Here</a></p>
+                    
+                    <p>Landing page about an exchange made for Platzi's responsive design course. The site was built following the Mobile First methodology</p>
+                    
+                    <p>Tools</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    
+                </div>
+    
+                <div class="proyect">
+                    <h3>Platzi Exchange</h3>
+                    <div class="img__container">
+                        <img class="proyect__image" loading="lazy" src="./assets/images/platziExchange-view.webp" alt="Preview of the view corresponding to the Platzi Exchange project">
+                    </div>
+
+                    <p>Repository <a class="repo__link" href="https://github.com/Juan961/exchange" target="_blank">Here</a></p>
+
+                    <p>Web page in which through the consumption of an API you can consult values of the 20 most important cryptocurrencies, for each one you can enter and see a graph of their latest prices, variation and exchange offers</p>
+                    
+                    <p>Tools</p>    
+                    <ul>
+                        <li>Vue js</li>
+                        <li>Tailwind</li>
+                    </ul>
+                    
+                </div>
+    
+                <div class="proyect">
+                    <h3>Educare</h3>
+                    <div class="img__container">
+                        <img class="proyect__image" loading="lazy" src="./assets/images/educare-view.webp" alt="Preview of the view corresponding to the Educare project">
+                    </div>
+                    <p>Repository <a class="repo__link" href="https://github.com/Juan961/proyectoIA" target="_blank">Here</a></p>
+                    
+                    <p>Project for Microsoft's "MagIA juvenil" program, in which we were given a private key to access Azure cognitive services. The project consisted through the analysis of feelings by text to determine the most related subjects of a person</p>
+                    
+                    <p>Tools</p>
+    
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+    
+                <div class="proyect">
+                    <h3>API Machine Learning</h3>
+                    <div class="img__container">
+                        <img class="proyect__image" src="./assets/images/machine.webp" alt="Preview of the view corresponding to the API Machine Learning project">
+                    </div>
+
+                    <p>Repository <a class="repo__link" loading="lazy" href="https://github.com/Juan961/RestApi_MachineLearning" target="_blank">Here</a></p>
+
+                    <p>API in which a machine learning model works, predicts according to some data if a person is prone to heart disease. The creation of the model was done with Sklearn using the GradientBoostClassifier algorithm, a PCA algorithm was also used to reduce the dimensionality of the features and avoid overfiting</p>
+                    
+                    <p>Tools</p>
+    
+                    <ul>
+                        <li>Flask</li>
+                        <li>Sklearn</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="proyect">
+                  <h3>Todo App</h3>
+                  <div class="img__container">
+                      <img class="proyect__image static" loading="lazy" src="./assets/images/todo.webp" alt="Preview of the view corresponding to the Todo App project">
+                  </div>
+                  <p>Repository Fronted <a class="repo__link" href="https://github.com/Juan961/todo-app" target="_blank">Here</a></p>
+                  <p>Repository Backend <a class="repo__link" href="https://github.com/Juan961/todo-app-logic" target="_blank">Here</a></p>
+                  
+                  <p>Application to register to do's. It has a simple login and registration, inside the users can list the tasks, can create a task, delete it and mark it as done. The application connects an API which is made in express, this is responsible for the connection with the database and the logical part</p>
+                  
+                  <p>Tools</p>
+  
+                  <ul>
+                      <li>Vue Js</li>
+                      <li>Express</li>
+                      <li>MySQL</li>
+                  </ul>
+              </div>
+
+              <div class="proyect">
+                <h3>Weather App</h3>
+                <div class="img__container">
+                    <img class="proyect__image static" loading="lazy" src="./assets/images/weather.webp" alt="Preview of the view corresponding to the Weather App project">
+                </div>
+                <p>Repository <a class="repo__link" href="https://github.com/Juan961/weather" target="_blank">Here</a></p>
+                
+                <p>SPA in which you can observe the climate of the cities of the world as well as some data. The application changes dynamically depending on the climate of the city you are looking for. To obtain the data, the <a href="https://openweathermap.org/current" target="_blank">openwheater API</a> was used</p>
+                
+                <p>Tools</p>
+
+                <ul>
+                    <li>VueJS</li>
+                </ul>
+              </div>
+
+              <div class="proyect">
+                <h3>Chat App</h3>
+                <div class="img__container">
+                    <img class="proyect__image static" loading="lazy" src="./assets/images/ChatApp.png" alt="Preview of the view corresponding to the Chat App project">
+                </div>
+                <p>Repository Fronted <a class="repo__link" href="https://github.com/Juan961/chat-app" target="_blank">Here</a></p>
+                <p>Repository Backend <a class="repo__link" href="https://github.com/Juan961/chat-app-logic" target="_blank">Here</a></p>
+                <p>Repository Socket Io <a class="repo__link" href="https://github.com/Juan961/chat-app-socket" target="_blank">Here</a></p>
+                
+                <p>Communication application in which people can register and chat for different purposes. The database used is MongoDB in which the data of the users and their groups are stored. Socket IO was used for communication between users, which allowed generating the chat through events</p>
+                
+                <p>Tools</p>
+
+                <ul>
+                    <li>VueJS</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Socket io</li>
+
+                </ul>
+              </div>
+            </div>
+            
+        </section>
+        
+        <section id="tecnologies" class="tecnologies">
+            <div class="line quepal"></div>
+            <h2>Tecnologies</h2>
+            <p>Technologies and tools I use</p>
+            <div>
+                <i class='bx bxl-vuejs vuejs'></i>
+                <i class='bx bxl-nodejs nodejs'></i>
+                <i class='bx bxl-javascript javascript' ></i>
+                <i class='bx bxl-python python' ></i>
+                <i class='bx bxl-flask flask'></i>
+                <i class='bx bxl-git git'></i>    
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="line flare"></div>
+            <h2>Get in touch</h2>
+            <p>Contact me if you need something</p>
+            <div>
+                <a href="https://www.linkedin.com/in/juan-jos%C3%A9-garcia-pinz%C3%B3n-060ab11b6/" class="contact__link linkedin" target="_blank" ><i class='bx bxl-linkedin-square'></i></a> 
+                <a href="https://twitter.com/IamGarciaJuan" target="_blank" class="contact__link twitter"><i class='bx bxl-twitter' ></i></a> 
+                <a href="https://github.com/Juan961" target="_blank" class="contact__link github"><i class='bx bxl-github'></i></a> 
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> <i> Copyright © 2021 - Juan Jose Garcia Pinzon </i> </p>
+    </footer>
+</body>
+</html>
