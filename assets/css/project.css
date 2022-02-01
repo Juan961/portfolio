@@ -1,0 +1,267 @@
+:root {
+  --blue-light: #2bb5bf;
+  --light-background-main: #f9f9f9;
+  --light-background-tools: #f1f1f1;
+  --light-background-header: #ffffff;
+  --light-background-text: #030303;
+  --light-header-text: #2bb5bf;
+  --dark-background-main: #181818;
+  --dark-background-tools: #0f0f0f;
+  --dark-background-header: #202020;
+  --dark-background-text: #ffffff;
+  --dark-header-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+  background: var(--light-background-main);
+}
+
+/* --------------------------- HEADER --------------------------- */
+
+header {
+  font-family: 'Roboto', sans-serif;
+  height: 50px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-background-header);
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  width: 80px;
+  padding: 3px 0;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--light-header-text);
+
+  transition: all 200ms linear;
+}
+
+nav a:nth-child(2) {
+  color: white;
+  background: #2bb5bf;
+}
+
+nav a:hover {
+  color: white;
+  font-weight: 400;
+  background: #2bb5bf;
+}
+
+nav a:nth-child(2):hover {
+  color: white;
+  background: rgb(28, 144, 165);
+}
+
+/* ----------------------- Main ----------------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Spartan', sans-serif;
+  padding: 15px 10px;
+  min-height: calc(100vh - 110px);
+  background: var(--light-background-main);
+  color: var(--light-background-text);
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+aside {
+  min-width: 200px;
+  margin-bottom: 10px;
+}
+
+.aside__demo {
+  width: 100%;
+}
+
+.demo__link {
+  display: block;
+  width: 100%;
+  background: #2bb5bf;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.demo__avaliable {
+  color: red;
+  font-size: .9rem;
+  margin-top: 10px;
+}
+
+.tools {
+  background: var(--light-background-tools);
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.tools p {
+  font-weight: bold;
+}
+
+.tools ul {
+  margin-left: 15px;
+}
+
+.tools ul li{
+  font-weight: 400;
+}
+
+.project h1{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.project section{
+  margin: 10px 0;
+}
+
+.project section h2{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.project section p{
+  font-weight: 300;
+}
+
+.project__image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#weather__img {
+  max-width: 1200px;
+  max-height: 600px
+}
+
+#tweeter {
+  max-height: 300px;
+}
+
+.project__git ul {
+  margin-left: 20px;
+}
+
+.project__usage ol {
+  margin-left: 20px;
+}
+
+.project__usage ol > li{
+  margin-bottom: 20px;
+}
+
+.project__usage ol ul{
+  margin-left: 20px;
+}
+
+.project__usage ol li > img{
+  margin-top: 10px;
+  width: 100%;
+  max-width: 936px;
+}
+
+.repo__link {
+  color: #2bb5bf;
+}
+
+.repo__link:hover {
+  color: rgb(28, 144, 165);
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.img__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  font-size: 2rem;
+  font-weight: 500;
+  
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.gallery-item:hover .img__text{
+  opacity: 1;
+}
+
+@media (min-width: 500px) {
+  .gallery {
+    max-width: 1300px;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .small__gallery {
+    max-width: 749px;
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+  }
+  .gallery-item__2 {
+    grid-column: span 2;
+  }
+  .gallery-item__3 {
+    grid-column: span 2;
+  }
+  .gallery-item__5 {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  aside {
+    max-width: 200px;
+  }
+}

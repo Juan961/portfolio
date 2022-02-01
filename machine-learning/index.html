@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Machine Learning project">
+  <title>Portfolio - API ML</title>
+  <link rel="stylesheet" href="../assets/css/project.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../educare/">Past</a>
+      <a href="../">Home</a>
+      <a href="../to-do/">Next</a>
+    </nav>
+  </header>
+  <main>
+    <aside >
+      <div class="aside__demo">
+        <a class="demo__link" href="https://flask-ml-heart.herokuapp.com">Demo</a>
+      </div>
+      <div class="tools">
+        <p>Tools</p>
+        <ul class="tools__list">
+          <li>Flask</li>
+          <li>SkLearn</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="project">
+      <h1>API Machine Learning</h1>
+
+      <section class="project__desc">
+        <h2>Description</h2>
+        <p>API in which a machine learning model works, predicts according to some data if a person is prone to heart disease. The creation of the model was done with Sklearn using the GradientBoostClassifier algorithm, a PCA algorithm was also used to reduce the dimensionality of the features and avoid overfiting</p>
+      </section>
+      
+      <section class="project__git">
+        <h2>Repositories</h2>
+        <ul>
+          <li><a class="repo__link" href="https://github.com/Juan961/RestApi_MachineLearning" target="_blank">API</a></li>
+        </ul>
+      </section>
+
+      <section class="project__usage">
+        <h2>Usage</h2>
+        <ol>
+          <li>
+            <p>Complete the data parameters through the body using json.</p>
+            <ul>
+              <li>age: Age in years of the patient</li>
+              <li>sex: 1 - Man, 2 - Woman</li>
+              <li>cp: Type of value in the chest among 4 possible values. (1 - Angina - typical, 2 - Atypical angina, 3 - Non-anginal pain, 4 - Asymptomatic pain)</li>
+              <li>trestbps: Resting blood pressure</li>
+              <li>chol: Cholesterol measurement</li>
+              <li>fbs: Fasting blood sugar</li>
+              <li>restcg: Electrocardiography results at rest</li>
+              <li>thalach: Maximum heart rate reached</li>
+              <li>exang: Did you develop angina after exercising?</li>
+              <li>oldpeak: Exercise-Induced ST Depression Relative to Rest (More - information here. https://litfl.com/st-segment-ecg-library/)</li>
+              <li>slope: Slope of the ST segment peak</li>
+              <li>ca: Number of major blood vessels colored by fluoroscopy</li>
+              <li>thal: Thalassemia: 1 - Normal, 2 - Fixed defect, 3 - Reversible defect</li>
+
+            </ul>
+            <p>Example: </p>
+            <code>
+              {
+                "age": 13,
+                "sex": 1,
+                "cp":  1,
+                "trestbps": 140,
+                "chol": 221,
+                "fbs": 0,
+                "restcg": 1,
+                "thalach": 164,
+                "exang": 1,
+                "oldpeak": 0.0,
+                "slope": 2,
+                "ca": 0,
+                "thal": 2
+              }
+            </code>
+
+          </li>
+          <li>
+            <p>Make a POST request to the route <a href="https://flask-ml-heart.herokuapp.com/predict">/predict</a></p>
+            <img src="../assets/images/machine-gallery/request_example.png" alt="">
+          </li>
+          <li> 
+            <p>Your response should look like this</p> 
+            <img src="../assets/images/machine-gallery/response_example.png" alt="">
+          </li>
+        </ol>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

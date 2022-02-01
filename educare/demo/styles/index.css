@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(2);
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    margin-left: 10px;
+}
+
+.header-logo > img{
+  width: 40px;
+}
+
+.header-navbar{
+    font-size: 1.1rem;
+    margin-right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.app{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.app-presentacion{
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#app-presentacion-inicio, #app-presentacion-mision, #app-presentacion-vision, #app-presentacion-test{
+    scroll-margin-top: 60px;
+}
+
+.app-presentacion-tittle{
+    text-align: center;
+}
+
+.header-navbar-item{
+    padding: 5px 5px 5px 5px;
+    border: 1px solid white;
+}
+
+.header-navbar-item:hover{
+    background-color: rgb(69, 173, 126);
+    border-radius: 10px;
+    border: 1px solid rgb(18, 136, 83);
+    color: white;
+}
+
+.app-presentacion-desc{
+    line-height: 25px;
+    padding: 0 20px 0 20px;
+}
+
+.app-form{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 20px 1px rgba(69, 173, 126, 0.5);
+    padding: 20px;
+}
+
+.app-form-textarea, .app-form-input, .app-form-label, .app-form-submit {
+    display: block;
+    width: 100%;
+    
+}
+#app-presentacion-desc-inicio, #app-presentacion-desc-mision, #app-presentacion-desc-vision{
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#opinionArtes{
+    margin-bottom: 20px;
+}
+
+#boton {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#Nombre{
+    margin-top: 10px;
+}
